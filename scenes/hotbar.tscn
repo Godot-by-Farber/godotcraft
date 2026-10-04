@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxanwthyrlar1"]
+
+[ext_resource type="Script" uid="uid://c2l57xtmxsk4e" path="res://scripts/hotbar.gd" id="1_1lvyt"]
+[ext_resource type="MeshLibrary" uid="uid://dbwvuw0cpt0xx" path="res://resources/blocks_mesh_library.tres" id="2_db7yd"]
+
+[node name="Hotbar" type="Node3D"]
+script = ExtResource("1_1lvyt")
+mesh_lib = ExtResource("2_db7yd")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+unique_name_in_owner = true
+own_world_3d = true
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1280, 720)
+render_target_update_mode = 4
+
+[node name="HotbarCamera" type="Camera3D" parent="SubViewportContainer/SubViewport"]
+unique_name_in_owner = true
+cull_mask = 1048574
+projection = 1
+far = 40.0
+
+[node name="CubeContainer" type="Node3D" parent="SubViewportContainer/SubViewport"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(0.999798, 0, -0.0200874, 0, 1, 0, 0.0200874, 0, 0.999798, 0, 25.4023, 10)
+layers = 2

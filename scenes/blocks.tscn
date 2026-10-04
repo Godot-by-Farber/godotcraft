@@ -1,0 +1,95 @@
+[gd_scene load_steps=20 format=3 uid="uid://5ver7jccjhcr"]
+
+[ext_resource type="PackedScene" uid="uid://b5co6navgsibm" path="res://scenes/block_template.tscn" id="1_ic3an"]
+[ext_resource type="ArrayMesh" uid="uid://bt0ri24dicpfm" path="res://meshes/blocks/block_square.tres" id="2_ic3an"]
+[ext_resource type="ArrayMesh" uid="uid://cpexrxktocjoe" path="res://meshes/blocks/block_blank.tres" id="2_s0i7d"]
+[ext_resource type="ArrayMesh" uid="uid://cwqytrrodu4r2" path="res://meshes/blocks/bricks_dark.tres" id="3_ic3an"]
+[ext_resource type="ArrayMesh" uid="uid://d3518j8jnapqi" path="res://meshes/blocks/bricks_grey.tres" id="4_ic3an"]
+[ext_resource type="ArrayMesh" uid="uid://d37xs8vou8i2g" path="res://meshes/blocks/bricks_red.tres" id="5_ic3an"]
+[ext_resource type="ArrayMesh" uid="uid://kopgs1ap1tpt" path="res://meshes/blocks/bricks_yellow.tres" id="6_ic3an"]
+[ext_resource type="ArrayMesh" uid="uid://dql07gy8i75xc" path="res://meshes/blocks/coal.tres" id="7_ic3an"]
+[ext_resource type="ArrayMesh" uid="uid://glssxk8ep2sr" path="res://meshes/blocks/diamond.tres" id="8_ic3an"]
+[ext_resource type="ArrayMesh" uid="uid://b1yipnx65i2iw" path="res://meshes/blocks/dirt.tres" id="9_ic3an"]
+[ext_resource type="ArrayMesh" uid="uid://dmb5co7m3nk5a" path="res://meshes/blocks/exclamation.tres" id="10_ic3an"]
+[ext_resource type="ArrayMesh" uid="uid://kbnmuff3hh2n" path="res://meshes/blocks/grass.tres" id="11_ic3an"]
+[ext_resource type="ArrayMesh" uid="uid://daowfcq8rky20" path="res://meshes/blocks/ice.tres" id="12_ic3an"]
+[ext_resource type="ArrayMesh" uid="uid://ciavha5cmce7e" path="res://meshes/blocks/leaves.tres" id="13_ic3an"]
+[ext_resource type="ArrayMesh" uid="uid://ck3nc2cy57x0q" path="res://meshes/blocks/question_mark.tres" id="14_ic3an"]
+[ext_resource type="ArrayMesh" uid="uid://bf01cfkbn8bqi" path="res://meshes/blocks/snow.tres" id="15_ic3an"]
+[ext_resource type="ArrayMesh" uid="uid://cqqvb4fe0mk37" path="res://meshes/blocks/stone.tres" id="16_ic3an"]
+[ext_resource type="ArrayMesh" uid="uid://dog52qy0d03ln" path="res://meshes/blocks/wood.tres" id="17_ic3an"]
+[ext_resource type="ArrayMesh" uid="uid://pxngyq48gi56" path="res://meshes/blocks/wood_planks.tres" id="18_ic3an"]
+
+[node name="Blocks" type="Node3D"]
+
+[node name="BlockBlank" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.38419e-07, 0)
+mesh = ExtResource("2_s0i7d")
+
+[node name="BlockSquare" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+mesh = ExtResource("2_ic3an")
+
+[node name="BricksDark" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+mesh = ExtResource("3_ic3an")
+
+[node name="BricksGrey" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0)
+mesh = ExtResource("4_ic3an")
+
+[node name="BricksRed" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 0)
+mesh = ExtResource("5_ic3an")
+
+[node name="BricksYellow" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+mesh = ExtResource("6_ic3an")
+
+[node name="Coal" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+mesh = ExtResource("7_ic3an")
+
+[node name="Diamond" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+mesh = ExtResource("8_ic3an")
+
+[node name="Dirt" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 4)
+mesh = ExtResource("9_ic3an")
+
+[node name="Exclamation" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 4)
+mesh = ExtResource("10_ic3an")
+
+[node name="Grass" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 4)
+mesh = ExtResource("11_ic3an")
+
+[node name="Ice" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 4)
+mesh = ExtResource("12_ic3an")
+
+[node name="Leaves" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+mesh = ExtResource("13_ic3an")
+
+[node name="QuestionMark" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 8)
+mesh = ExtResource("14_ic3an")
+
+[node name="Snow" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8)
+mesh = ExtResource("15_ic3an")
+
+[node name="Stone" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 8)
+mesh = ExtResource("16_ic3an")
+
+[node name="Wood" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 8)
+mesh = ExtResource("17_ic3an")
+
+[node name="WoodPlanks" parent="." instance=ExtResource("1_ic3an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 8)
+mesh = ExtResource("18_ic3an")
