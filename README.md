@@ -35,7 +35,7 @@ for test_file in tests/*_test.gd; do
 done
 ```
 
-The test workflow uses Godot 4.7.2; the existing Windows export workflow still uses 4.4.
+The test and Windows export workflows both use Godot 4.7.2.
 
 ## Controls
 
